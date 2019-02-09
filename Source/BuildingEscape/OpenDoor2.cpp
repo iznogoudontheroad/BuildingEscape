@@ -22,6 +22,7 @@ void UOpenDoor2::BeginPlay()
 	Super::BeginPlay();
 	Owner = GetOwner();
 	
+	
 	// ...
 	
 }
@@ -36,7 +37,7 @@ void UOpenDoor2::OpenDoor()
 
 void UOpenDoor2::CloseDoor()
 {
-	Owner->SetActorRotation(FRotator(0.f, 0.f, 0.f));
+	Owner->SetActorRotation(FRotator(0.f, 90.0f, 0.f));
 }
 
 // Called every frame
